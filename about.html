@@ -14,7 +14,43 @@
 
     
     <link rel="stylesheet" href="assets/css/ghostion.min.css" />
+    <style>
+        /*
+        .transparent
+        {
+            opacity:0;
+        } 
+        .block_transparent
+        {
+            opacity:0.7;
+        }
+        #at_top
+        {
+            color:#fff;background:#0c8fbf
+        }
+        .at_with_blog_cover
+        {
+            background-image:none;background-color:rgba(6,75,100,.25)
+        }
+        #at_header
+        {
 
+            background:#021d27
+        }
+        .black
+        {
+            color: #009900;
+        }
+        */
+        .transparent
+        {
+            opacity:0;
+        } 
+
+
+
+
+    </style>
     
     <!-- <link rel="stylesheet" href="/assets/css/ghostion.custom.css" /> -->
 
@@ -28,16 +64,16 @@
         <div id="at_body">
             
 
-
 <div class="left-off-canvas-menu">
     <ul class="off-canvas-list">
         <li><label>Main Menu</label></li>
         <li><a class="at_menu_item" href="index.html"><span class="fa fa-home"></span> Home</a></li>
-        <li><a class="at_menu_item" href="about"><span class="fa fa-bar-chart-o"></span> About</a></li>
-        <li><a class="at_menu_item" href="typography"><span class="fa fa-file-text"></span> Typography</a></li>
-        <li><a class="at_menu_item" href="documentation"><span class="fa fa-book"></span> Documentation</a></li>
-        <li><a class="at_menu_item" href="faq"><span class="fa fa-question-circle"></span> FAQ</a></li>
-        <li><a class="at_menu_item" href="https://github.com/axiantheme/ghostion/archive/master.zip"><span class="fa fa-cloud-download"></span> Download</a></li>
+        <li><a class="at_menu_item" href="about.html"><span class="fa fa-bar-chart-o"></span> About</a></li>
+        <li><a class="at_menu_item" href="static_/resume.pdf"><span class="fa fa-file-text"></span> Resume</a></li>
+        <li><a class="at_menu_item" href="projects"><span class="fa fa-book"></span> Projects</a></li>
+        <li><a class="at_menu_item" href="blogs"><span class="fa fa-question-circle"></span> Blogs</a></li>
+        <li><a class="at_menu_item" href="code"><span class="fa fa-list"></span> Code</a></li>
+        <li><a class="at_menu_item" href="http://jack-first-personal-site.herokuapp.com/"><span class="fa fa-bolt"></span> Dynamic Site</a></li>
     </ul>
 </div>
 
@@ -49,19 +85,22 @@
                 
                         <a href="index.html">
                 
-                    <span class="at_logo_text">Jack Lin</span></a>
+                    <span class="at_logo_text">Jack's Website </span></a>
             </div>
         </div>
-        <div class="medium-4 columns text-right hide-for-small-only">
+        <div class="black medium-4 columns text-right hide-for-small-only">
             <div class="at_icon_menu">
-                <a class="at_icon_menu_item" href="about" data-tooltip class="has-tip" title="About"><span class="fa fa-bar-chart-o"></span></a>
-                <a class="at_icon_menu_item" href="http://127.0.0.1:2368/static/self_added/resume.pdf" data-tooltip class="has-tip" title="Resume"><span class="fa fa-file-text"></span></a>
-                <a class="at_icon_menu_item" href="http://127.0.0.1:2368/static/self_added/resume.pdf" data-tooltip class="has-tip" title="Resume2"><span class="fa fa-book"></span></a>
-                <a class="at_icon_menu_item" href="http://127.0.0.1:2368/test" data-tooltip class="has-tip" title="test2"><span class="fa fa-question-circle"></span></a>
-                <a class="at_icon_menu_item" href="https://github.com/axiantheme/ghostion/archive/master.zip" data-tooltip class="has-tip" title="Download"><span class="fa fa-cloud-download"></span></a>
+                <a class="at_icon_menu_item" href="about.html" data-tooltip class="has-tip" title="About"><span class="fa fa-bar-chart-o"></span></a>
+                <a class="at_icon_menu_item" href="static_/resume.pdf" data-tooltip class="has-tip" title="Resume"><span class="fa fa-file-text"></span></a>
+                <a class="at_icon_menu_item" href="projects" data-tooltip class="has-tip" title="Projects"><span class="fa fa-book"></span></a>
+                <a class="at_icon_menu_item" href="blogs" data-tooltip class="has-tip" title="Blogs"><span class="fa fa-question-circle"></span></a>
+                <a class="at_icon_menu_item" href="code" data-tooltip class="has-tip" title="Code"><span class="fa fa-list"></span></a>
+                <a class="at_icon_menu_item" href="http://jack-first-personal-site.herokuapp.com" data-tooltip class="has-tip" title="Dynamic Site"><span class="fa fa-bolt"></span></a>
+
             </div>
         </div>
-        <div class="medium-4 columns">
+        
+                <div class="medium-4 columns">
             <div id="at_search">
     <div class="row">
         <div class="large-12 large-centered columns">
@@ -69,11 +108,11 @@
         </div>
     </div>
     <div class="at_search_results"></div>
+
 </div>
         </div>
     </div>
 </div>
-
 
 <div id="at_showcase">
     <div class="at_blog_cover" style="background-image: url(content/images/2014/Apr/cal_crop2.png)">
@@ -86,7 +125,7 @@
                             <div class="at_block">
                                 <article class="post page">
                                     <div class="at_post_header">
-                                        <h2 class="at_post_title">What is Ghostion</h2>
+                                        <h2 class="transparent at_post_title">What is Ghostion</h2>
                                     </div>
                                 </article>
                             </div>
@@ -107,72 +146,46 @@
             <div class="at_block">
                 <article class="post page">
                     <div class="at_post_content">
-                        <h2 id="ghostionoverview">Ghostion Overview</h2>
+                        <h2 id="ghostionoverview">About</h2>
+<p> Hello, my name is Jack, I am an engineering student studying at Univeristy of California, Berkeley. This
 
-<p><strong>Ghostion</strong> is a free Ghost theme powered by Foundation 5 framework and Bourbon Sass Mixins Library. The theme presents a simple responsive design and packed with all Foundation 5 features to make your Ghost blog powerful. Combined with Bourbon, a simple and lightweight mixin library for Sass, writing CSS is never faster and easier than ever before.</p>
+is my first attempt in building my personal website and its actually a pretty fun process. I begin to take interest in web development about half a year ago when I built my first web app with my fellow classmates Khoa and Kevin on my first Hackerthon. 
 
-<p><img src="http://ghostdemo.axiantheme.com/ghostion/demo/overview.jpg" alt="Ghostion" /></p>
+</p>
+
+<p> You can check out the website here <a href="https://bearrec.herokuapp.com/">Bear Rec</a></p>
+
+<p>
+The process was really fun and rewarding and I definitely learn alot. 
+
+After the event I started dive in to web development and is currently working in a research team that deals with nodes.js.
+</p>
+
+<p>
+Besides web development, I have found interest in data science and optimization models.
+</p>
+
 
 <p><br /></p>
 
-<h2 id="fullfeatures">Full Features</h2>
+<h4 id="fullfeatures">What you will find Here</h2>
 
-<p><strong>Ghostion</strong> theme is packaged with full powerful features so you can get started building your blog easily. Faster to learn, faster to code, and faster for users as well.</p>
+<p>
+This is a casual personal website with my resume, projects and interesting code I found or wrote.
 
-<h4 id="ghost041compatible">Ghost 0.4.1 Compatible</h4>
+</p>
 
-<p>Ghostion supports <strong>Featured Post</strong> tag and <strong>Static Page</strong> which are part of <a href="http://blog.ghost.org/ghost-0-4/">Ghost 0.4+</a> best features.</p>
-
-<h4 id="foundation5framework">Foundation 5 Framework</h4>
-
-<p><a href="http://foundation.zurb.com/">Foundation 5</a> is the professional choice for designers and developers. What you can do with Foundation 5, you can do with Ghostion theme, including:</p>
-
+<p>
+TL;DR
+</p>
 <ul>
-<li>Foundation 5 Powerful Responsive Grid Layouts</li>
-<li>Off-Canvas Menu</li>
-<li>Many Easy to Use Button Styles</li>
-<li>Reveal Modal </li>
-<li>Tooltips</li>
-<li>and many more</li>
+<li>Resume</li>
+<li>Projects that I've Done</li>
+<li>Interesting Codes that I wrote or found online</li>
+<li>Random Post</li>
 </ul>
 
-<p>Getting started with Foundation 5 is easy. Please check the full <a href="http://foundation.zurb.com/docs/">Foundation 5 Documentation</a> for complete information.</p>
 
-<h4 id="bourbon">Bourbon</h4>
-
-<p>Bourbon library contains mixins, functions, and other addons to build kick ass web stuf, so you can customize Ghostion theme easier and faster.</p>
-
-<h4 id="fontawesome">FontAwesome</h4>
-
-<p>FontAwesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. The complete set of 300+ icons in FontAwesome can be found <a href="http://fortawesome.github.io/Font-Awesome/icons/">here</a>.</p>
-
-<h4 id="ghosthunter">GhostHunter</h4>
-
-<p><a href="https://github.com/i11ume/ghostHunter/">GhostHunter</a> provides Ghostion full text searching right in the blog without having to resort to any third-party solutions, by utilizing the rss feed.</p>
-
-<h4 id="googlefonts">Google Fonts</h4>
-
-<p><a href="http://www.google.com/fonts">Google Fonts</a> offers hundreds of free, open-source fonts optimized for the web. Just one quick step on changing Ghostion configuration file and you are ready to have Google Font presented on your blog.</p>
-
-<h4 id="googleanalytics">Google Analytics</h4>
-
-<p>Ghostion uses the asynchronous <a href="http://www.google.com/analytics/">Google Analytics</a> tracking code, the fastest and most reliable tracking code Google Analytics offers.</p>
-
-<h4 id="fitvidsjs">FitVids.JS</h4>
-
-<p>A lightweight, easy-to-use jQuery plugin for fluid width video embeds, to achieve fluid width videos in your responsive blog. <a href="http://fitvidsjs.com/">FitVids.JS</a> support YouTube, Vimeo, Blip.tv, Viddler, Kickstarter, and even your own video vendor.</p>
-
-<h4 id="disqus">Disqus</h4>
-
-<p><a href="http://disqus.com/">Disqus</a> makes commenting easier and more interactive, while connecting your blog and your commenters across a thriving discussion community. The Disqus widget for Ghostion seamlessly integrates with your blog post using the Disqus API.</p>
-
-<h4 id="highlightjs">Highlight.JS</h4>
-
-<p><a href="http://highlightjs.org/">Highlight.js</a> highlights syntax in code examples on Ghostion blog. It's very easy to use because it works automatically: finds blocks of code, detects a language, highlights it.</p>
-
-<h4 id="gulpjs">Gulp.JS</h4>
-
-<p><a href="http://gulpjs.com/">Gulp</a> is an intuitive, code-over-configuration, streaming build system. We use Gulp to build Ghostion theme pacakge and all its related files, including the documentation, DemoBuilder, and the source files. Please check our <a href="documentation">Documentation</a> to learn more how to customize and build Ghostion theme using Gulp.</p>
                     </div>
                 </article>
             </div>
@@ -187,10 +200,10 @@
         <div class="large-12 columns text-center">
             <div class="at_block">
                 <div class="copyright">
-                    <span>&copy; 2014 <a href="index.html">Jack Lin</a> - Free Ghost Theme<br />Powered by <a href="http://foundation.zurb.com/">Foundation 5 Framework</a> and <a href="http://bourbon.io/">Bourbon Sass Mixins Library</a></span>
+                    <span>&copy; 2014 <a href="index.html">Jack Lin</span>
                 </div>
                 <div class="poweredby">
-                    <span>Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a> and hosted by <a href="https://www.digitalocean.com/?refcode=3bb89a8961ff">DigitalOcean</a></span>
+                    <span>Powered by<a class="icon-ghost" href="http://ghost.org">Ghost</a></span>
                 </div>
             </div>
         </div>
